@@ -5,21 +5,31 @@ html {
     margin:0px;
 }
 
-body{
+body {
     box-sizing:border-box;
     padding:0px;
     margin:0px;
 }
 
-.hero-image {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0px;
-    padding-left: 70px;
-    min-height: 100%;
+.headline {
+    font-size:60px;
+    line-height: 60px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}    
+
+.hero {
     background-image: url("assets/img/hero.png");
-    background-size:cover 50% 50%;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.block-content {
+    box-sizing: border-box;
+    display: block;
+    margin: 0px auto;
+    padding-top: 100px;
+    min-height: 100%;
     width: 1280px;
     height:740px;
     color:white;
@@ -28,36 +38,49 @@ body{
     align-items: center;
 }
 
-.cim {
-    font-size: 55px;
+.left {
+    float:left;
+    margin-top:70px;
+    margin-bottom: 70px;
+    margin-left: 60px;
 }
 
-h5 {
-    line-height: 5px;
+.clearfix {
+    clear: both;
 }
 
-h5:hover {
+.blockquote {
+    font-weight:800;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.author {
+    text-decoration: none;
+    color:white;
+}
+
+.author:hover {
     cursor: pointer;
 }
 
-.text {
-    font-size: 24px;
-}
-
-.download{
-    margin-top: 40px;
+.download {
+    margin-right: 20px;
+    display:inline-block;
+    line-height: 54px;
     background: rgba(0, 200, 255, 0.8);
-    height:60px ;
-    width: 200px ;
+    height:60px;
+    width: 200px;
     color:white;
     font-size: 22px;
-    border-style:none   ;
+    border-style:none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
 }
 
 .download:hover {
@@ -65,7 +88,8 @@ h5:hover {
 }
 
 .learn {
-    margin-left:10px ;
+    display:inline-block;
+    line-height: 54px;
     background: rgba(255, 255, 255, 0.01);
     height:60px ;
     width: 180px ;
@@ -77,6 +101,8 @@ h5:hover {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .learn:hover {
@@ -85,15 +111,13 @@ h5:hover {
     opacity:1 ;
 }
 
-.hero-image2 {
+.right {
     float: right;
-    margin-left:220px;
-    margin-top: 110px;
+    margin-right:60px;
+    margin-top: 15px;
 }
 
-.hero-image:after{
-    content: "";
-    display: table;
+.clearfix {
     clear: both;
 }
 
