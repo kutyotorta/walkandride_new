@@ -20,7 +20,7 @@ body {
 }    
 
 .hero {
-    background-image: url("assets/img/hero.png");
+    background-image: url("../img/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -131,8 +131,6 @@ body {
 
 .services {
     box-sizing: border-box; 
-    
-
     height: 350px;
     font-weight: normal;
     background-color: yellowgreen;
@@ -141,8 +139,6 @@ body {
 .service-list {
     display: inline;
     background-color: teal;
-    
-    
 }
 
 .headline-size-2 {
@@ -157,7 +153,6 @@ body {
     line-height: 30px;
     background-color: violet;
     align-items: center;
-
 }
 
 .clearfix{
@@ -168,7 +163,6 @@ body {
     margin: 0px;
     padding:0px;
     background: rgba(43, 39, 39, 0.04);
-    
 }
 
 .block-discover {
