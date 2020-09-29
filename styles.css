@@ -59,10 +59,15 @@ blockquote {
 .author {
     text-decoration: none;
     color:white;
+    font-weight: bold;
 }
 
 .author:hover {
     cursor: pointer;
+}
+
+.buttons {
+    padding-top: 50px;
 }
 
 .download {
@@ -125,16 +130,54 @@ blockquote {
 }
 
 .services {
-    box-sizing: border-box;
-    display: block;
+    box-sizing: border-box; 
     height: 350px;
     font-weight: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
 }
 
+.table {
+    display: inline;
+
+}
+
 h3{
     text-transform: uppercase;
+}
+
+.atricle-left {
+    float: left;
+    margin-right: 50px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.atricle-second {
+    float: left;
+    margin-right: 50px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.atricle-third {
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.atricle-right {
+    float: left;
+}
+
+.clearfix{
+    clear: both;
 }
 
 .discover {
@@ -146,7 +189,6 @@ h3{
 }
 
 .block-discover {
-    overflow: hidden;
     box-sizing: border-box;
     display: block;
     margin: 0px auto;
@@ -154,10 +196,8 @@ h3{
 
 .discover-left {
     float: left;
-    owerflow:hidden;
+    overflow:hidden;
 }
-
-
 
 .discover-right {
     float: right;
