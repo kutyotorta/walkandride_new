@@ -9,6 +9,7 @@ body {
     box-sizing:border-box;
     padding:0px;
     margin:0px;
+    font-family:'Raleway', sans-serif;
 }
 
 .headline {
@@ -33,7 +34,6 @@ body {
     width: 1280px;
     height:740px;
     color:white;
-    font-family:'Raleway', sans-serif;
     line-height: 35px;
     align-items: center;
 }
@@ -49,7 +49,7 @@ body {
     clear: both;
 }
 
-blockquote {
+.blockquote {
     font-weight:800;
     font-size: 22px;
     margin-left: 0;
@@ -91,7 +91,7 @@ blockquote {
 
 .download:hover {
     background: rgb(182, 217, 245);
-    transition: 2s;
+    transition: 1s;
 }
 
 .learn {
@@ -131,49 +131,33 @@ blockquote {
 
 .services {
     box-sizing: border-box; 
+    
+
     height: 350px;
     font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 auto;
+    background-color: yellowgreen;
 }
 
-.table {
+.service-list {
     display: inline;
-
+    background-color: teal;
+    
+    
 }
 
-h3{
+.headline-size-2 {
     text-transform: uppercase;
+    font-size: 18px;
 }
 
-.atricle-left {
+.column {
     float: left;
+    width: 25%;
     margin-right: 50px;
-}
+    line-height: 30px;
+    background-color: violet;
+    align-items: center;
 
-.clearfix{
-    clear: both;
-}
-
-.atricle-second {
-    float: left;
-    margin-right: 50px;
-}
-
-.clearfix{
-    clear: both;
-}
-
-.atricle-third {
-    float: left;
-}
-
-.clearfix{
-    clear: both;
-}
-
-.atricle-right {
-    float: left;
 }
 
 .clearfix{
@@ -184,8 +168,7 @@ h3{
     margin: 0px;
     padding:0px;
     background: rgba(43, 39, 39, 0.04);
-    font-family:"system-ui";
-    align-items: center;
+    
 }
 
 .block-discover {
