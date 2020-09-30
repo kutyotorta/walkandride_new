@@ -131,28 +131,27 @@ body {
 
 .services {
     box-sizing: border-box; 
+    padding-top: 114px;
+    padding-bottom: 54px;
     height: 350px;
-    font-weight: normal;
-    background-color: yellowgreen;
-}
-
-.service-list {
-    display: inline;
-    background-color: teal;
+    line-height: 28px;
+    font-weight: 400;
+    width:100%;
+    margin:0 auto;
 }
 
 .headline-size-2 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .column {
     float: left;
     width: 25%;
-    margin-right: 50px;
-    line-height: 30px;
-    background-color: violet;
-    align-items: center;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-bottom: 60px;
+    padding-left: 15px;
 }
 
 .clearfix{
