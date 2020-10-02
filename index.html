@@ -84,16 +84,16 @@
                 <div class="application">
                     <a href="#" class="download">
                         <img class="small-icon" src="assets/img/logo/apple.png">
-                        <span class="little-fonts-button">Download for</span> <br> <b>iOS</b> </a>
+                        <span class="little-fonts-button">Download for <br></span> <span class="normal-fonts-button"> iOS</span></a>
                     <a href="#" class="download">
                         <img class="small-icon" src="assets/img/logo/android.png">
-                        <span class="little-fonts-button">Download for</span> <b>Android</b></a>
+                        <span class="little-fonts-button">Download for<br> </span> <span class="normal-fonts-button"> Android</span></a>
                 </div>  
             </div>
             <div class="clearfix"></div>
         </div>
     </section>
-<!-- In progress!
+
     <section class="explore">
         <div class="explore-video">
             <h1 class="headline-size-4">Explore. Walk and Ride in action</h1>
@@ -112,11 +112,65 @@
         </div>
     </section>
 
+<!--  A nyilakkal van gondom. Rátettem a hivatkozást és, ha megnyomom, akkor az oldal elejére ugrik.-->
     <section class="testimonials ">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <h2 class="headline-size-5">People talking about<a class="slideshow-title" href="https://tympanus.net/Freebies/WalkRideTemplate/" target="_blank">#WalkandRide</a> </h2>
+                <p class="text-size-normal">Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.</p>
+            </div>
+            <div class="mySlides">
+                <h2 class="headline-size-5">Users loving<a class="slideshow-title" href="https://tympanus.net/Freebies/WalkRideTemplate/" target="_blank">#WalkandRide</a> </h2>
+                <p class="text-size-normal">Joining this weekend's #WalkandRide fun! @emmy_lemmy bring your dogs, we can make it a fun walk!</p>
+            </div>
+            <div class="mySlides">
+                <h2 class="headline-size-5">Folks enjoying <a class="slideshow-title" href="https://tympanus.net/Freebies/WalkRideTemplate/" target="_blank">#WalkandRide</a> </h2>
+                <p class="text-size-normal">Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.</p>
+            </div>
 
+            <a href="#" class="prev" onclick="plusSlides(-1)">&#8592</a>
+            <a href="#" class="next" onclick="plusSlides(1)">&#8594</a>
 
-
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
     </section>
+ <!-- A script miatt tudom, hogy kikapok.-->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+            
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+            
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+            
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+            
+    
+
+    <!-- In progress!
 -->
 
 </body>
