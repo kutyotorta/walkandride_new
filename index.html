@@ -35,7 +35,7 @@
         <div class="block-content">
             <article class="column">
                 <header>
-                    <img src="assets\img\icons\places.png"alt="">
+                    <img src="assets\img\icons\places.png" alt="">
                     <h2 class="headline-size-2">Places</h2>
                 </header>
                 <p>Seamlessly empower fully researched growth strategies and interoperable internal sources.</p>
@@ -84,10 +84,10 @@
                 <div class="application">
                     <a href="#" class="download">
                         <img class="small-icon" src="assets/img/logo/apple.png" alt="">
-                        <span class="little-fonts-button">Download for <br></span> <span class="normal-fonts-button"> iOS</span></a>
+                        <span class="little-fonts-button">Download for</span> <span class="normal-fonts-button"> iOS</span></a>
                     <a href="#" class="download">
                         <img class="small-icon" src="assets/img/logo/android.png" alt="">
-                        <span class="little-fonts-button">Download for<br> </span> <span class="normal-fonts-button"> Android</span></a>
+                        <span class="little-fonts-button">Download for </span> <span class="normal-fonts-button"> Android</span></a>
                 </div>  
             </div>
             <div class="clearfix"></div>
@@ -95,7 +95,7 @@
     </section>
 
     <section class="explore">
-        <div class="explore-video">
+        <div class="block-content">
             <h1 class="headline-size-4">Explore. Walk and Ride in action</h1>
             <p>Just try it for yourself</p>
 
@@ -128,51 +128,60 @@
                 <p class="text-size-normal">Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.</p>
             </div>
 
-            <a href="#" class="prev" onclick="plusSlides(-1)">&#8592</a>
-            <a href="#" class="next" onclick="plusSlides(1)">&#8594</a>
+            <a href="#" class="prev">&#8592</a>
+            <a href="#" class="next">&#8594</a>
 
             <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" id="currentSlide1"></span> 
+                <span class="dot" id="currentSlide2"></span> 
+                <span class="dot" id="currentSlide3"></span> 
             </div>
         </div>
     </section>
- <!-- A script miatt tudom, hogy kikapok.-->
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-            
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-            
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-            
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
-            
-    
 
-    <!-- In progress!
+   <!-- Features részt nem értem, hogyan gondoltad. Ezzel nem tudok mit kezdeni.-->
+    <section class="features">
+        <div class="block-content"> 
+            <div class="simplest-picture">
+                <img src="assets/img/screen.png" alt="">
+            </div>
+
+            <div class="simplest-table">
+                <h1 class="headline-size-4">The simplest ui</h1> <hr>
+
+                <table class="simplest-ul">   
+                    <ul>
+                        <img src="assets/img/Simplest_icons/01_Fastest_bavigation.png">
+                        <h3>Fastest navigation</h3>
+                    </ul>
+        
+                    <ul>
+                        <img src="assets/img/Simplest_icons/02_Huge_number_of _cities.png">
+                        <h3>Huge number of cities</h3>
+                    </ul>
+                    
+                    <ul>
+                        <img src="assets/img/Simplest_icons/03_Only_the_best_routes.png">
+                        <h3>Only the best routes</h3>
+                    </ul>
+        
+                    <ul>
+                        <img src="assets/img/Simplest_icons/04_Beautiful_locations.png">
+                        <h3>Beautiful locations</h3>
+                    </ul>
+                    <ul>
+                        <img src="assets/img/Simplest_icons/05_Cloud_sync.png">
+                        <h3>Cloud sync</h3>
+                    </ul>
+                </table> 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- In progress! JS-el nem csináltam semmit, csak áttettem innen my.js-be
 -->
-
+    <script src="assets/JS/my.js"></script> 
 </body>
 
 </html>

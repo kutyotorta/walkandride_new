@@ -32,6 +32,8 @@ body {
     width: 1280px;
     height:740px;
     color:white;
+    width:100%;
+    margin: 0px auto;
 }
 
 .block-content {
@@ -40,6 +42,7 @@ body {
     padding-top: 100px;
     min-height: 100%;
     line-height: 35px;
+    
 }
 
 .left {
@@ -98,9 +101,9 @@ body {
 
 .learn {
     display:inline-block;
-    line-height: 60px;
+    line-height: 58px;
     background: rgba(255, 255, 255, 0.01);
-    height:56px ;
+    height:60px ;
     width: 180px ;
     font-size: 22px;
     color:white;
@@ -130,12 +133,9 @@ body {
     clear: both;
 }
 
-.services .block-content { 
-    padding-bottom: 54px;
-    height: 350px;
-    line-height: 28px;
-    font-weight: 400;
-    margin:0 auto;
+.services {
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .headline-size-2 {
@@ -146,10 +146,8 @@ body {
 .column {
     float: left;
     width: 25%;
-    padding-left: 15px;
-    padding-right:15px;
+    padding-left: 43px;
     padding-bottom: 60px;
-    padding-left: 15px;
     margin: 0 auto;
 }
 
@@ -191,24 +189,55 @@ body {
 }
 
 .small-icon {
+    display: block;
     max-width: 5vh;
+    float:left;
+    margin:0 auto;
+    width:30%
+    
+}
+.clearfix{
+    clear: both;
 }
 
 .application .download {
     display: inline-block;
     margin:0 auto;
     margin-right: 20px;
-    height:100px;
-    width: 180px;
+    height:70px;
+    width: 200px;
+    padding-left: 35px;
+    padding-top: 15px;
 }
 
+
 .little-fonts-button {
+    display: block;
     font-size: 10px;
+    float: right;
+    margin: 0 auto;
+    width: 65%;
+    line-height: 15px;
+    text-align: left;
+    
+}
+.clearfix {
+    clear: both;
 }
 
 .normal-fonts-button {
+    display: block;
     font-size: 25px;
     font-weight: bold;
+    float: right;
+    margin: 0 auto;
+    width: 65%;
+    line-height: 30px;
+    text-align: left;
+    
+}
+.clearfix {
+    clear: both;
 }
 
 .application {
@@ -361,6 +390,9 @@ body {
   }
 
   .dot-container {
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
     text-align: center;
     padding: 20px;
 }
@@ -386,3 +418,84 @@ body {
   .dot:hover {
     background-color: white;
   }
+
+  .simplest-picture {
+      float: left;
+      width: 50%;
+      margin-left: 30x;
+  }
+  .clearfix {
+      clear: both;
+  }
+
+  .simplest-table {
+      float: right;
+      width:50%;
+      margin:0 auto;
+  }
+  .clearfix {
+    clear: both;
+  }
+
+  hr {
+    border-top: 3px solid lightgrey;
+  }
+
+  .features {
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+  }
+
+  ul {
+    list-style-type:none ;
+    margin-right: 60px;
+  }
+
+  ul.img::before {
+     display: inline;
+    }
+
+    .submit {
+        margin-left: 40px;
+        background: rgba(0, 200, 255, 0.8);
+        height:60px ;
+        width: 150px ;
+        color:white;
+        font-size: 22px;
+        border-style:none   ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .submit:hover {
+        background: rgba(0, 200, 255, 0.4);
+    }
+    
+  
+    
+    .email {
+        font-size: 20px;
+        color:gray;
+        border-style:solid;
+        border-color: gray;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;  
+        height:60px ;
+        width: 380px;
+    }
+    
+    .footer-class {
+        font-style:
+        background-color: black;
+        width:100%;
+        text-align: center;
+        color:red;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
