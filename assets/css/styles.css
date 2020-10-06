@@ -29,21 +29,16 @@ body {
     background-image: url("../img/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1280px;
-    height:740px;
     color:white;
-    width:100%;
     margin: 0px auto;
 }
 
 .block-content {
     display: block;
     margin: 0px auto;
-    padding-top: 100px;
-    min-height: 100%;
+    padding: 100px 0;
     width:100%;
-    line-height: 35px;
-    
+    overflow: hidden;
 }
 
 .left {
@@ -135,11 +130,6 @@ body {
     clear: both;
 }
 
-.services {
-    margin-left: 45px;
-    margin-right: 45px;
-}
-
 .headline-size-2 {
     text-transform: uppercase;
     font-size: 16px;
@@ -158,13 +148,12 @@ body {
 }
 
 .discover {
-    background:rgba(#fafafa);
+    background:rgba(43, 39, 39, 0.04);
     margin: 0 auto;
     padding-top: 0px;
     padding-right: 15px;
     padding-bottom: 0px;
     padding-left: 15px; 
-    max-width: 1140px;
 }
 
 .img {
@@ -437,32 +426,41 @@ body {
       margin:0 auto;
   }
   .clearfix {
+    content: "";
     clear: both;
+    display: table;
   }
 
   hr {
     border-top: 3px solid lightgrey;
-    margin:50px;
+    margin:20px;
     width:450px;
-  }
-
-  .features {
-    margin-top: 80px;
-    margin-left: 40px;
-    margin-bottom: 80px;
   }
 
   ul {
     list-style-type:none ;
-    margin-right: 60px;
   }
 
- li {
+  li {
+      display: inline;
+      line-height: 30px;
+  }
+
+ li img {
      float: left;
-     padding:15px;
-     margin-right: 25px;
+     margin-right: 10px;
  }
  .clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+li span {
+    float: left;
+    width: 90%;
+}
+.clearfix {
     clear: both;
 }
 
